@@ -1,0 +1,14 @@
+appId: com.she.sehatq
+---
+- runFlow: ../common/login.yaml
+- tapOn:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn: "Lihat Profil"
+- scroll
+- tapOn: "Edit Profil"
+- tapOn:
+    id: "com.she.sehatq:id/et_input"
+    index: 3
+- eraseText: 5
+- scroll
+- - tapOn: "Simpan"

@@ -5,12 +5,13 @@ appId: com.she.sehatq
     id: "com.she.sehatq:id/iv_profile_nav"
 - tapOn:
     id: "com.she.sehatq:id/iv_profile_nav"
-# - runFlow: ./00_Verify Login Page.yaml
 - assertVisible: "Email"
 - assertVisible: "Password"
 - tapOn: "Email"
 - inputText: "alvinkresna@gmail.com"
+- back
 - tapOn: "Password"
 - inputText: "testsehatq"
+- back
 - tapOn:
     id: "com.she.sehatq:id/btn_login"

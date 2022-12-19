@@ -1,0 +1,6 @@
+appId: com.she.sehatq
+---
+- runFlow: ../common/login.yaml
+- tapOn:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- assertVisible: "Profil Saya"
