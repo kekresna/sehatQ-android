@@ -1,0 +1,18 @@
+appId: com.she.sehatq
+---
+- runFlow: ../common/precondition.yaml
+- assertVisible:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn: "Daftar"
+- tapOn: "Klik disini untuk login"
+- assertVisible:
+    id: "com.she.sehatq:id/iv_login"
+- assertVisible:
+    text: "Log in"
+    index: 0
+- assertVisible: "Email"
+- assertVisible: "Password"
+- assertVisible:
+    id: "com.she.sehatq:id/btn_login"

@@ -1,0 +1,20 @@
+appId: com.she.sehatq
+---
+- runFlow: ../common/precondition.yaml
+- assertVisible:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn: "Daftar"
+- tapOn: "Nama Lengkap"
+- inputText: "Tester 123"
+- tapOn: "Jenis Kelamin"
+- tapOn: "Laki-laki"
+- tapOn: "Password"
+- inputText: "testsehatq"
+- back
+- tapOn:
+    id: "com.she.sehatq:id/cb_terms"
+- tapOn:
+    id: "com.she.sehatq:id/btn_signup"
+- assertVisible: "Masukkan email yang valid"

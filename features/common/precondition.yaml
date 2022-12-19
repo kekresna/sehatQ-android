@@ -1,0 +1,8 @@
+appId: com.she.sehatq
+---
+- launchApp:
+    clearState: true
+- tapOn: "Halaman Utama"
+- tapOn: "Aktifkan"
+- tapOn: "While using the app"
+- tapOn: "Lewati"

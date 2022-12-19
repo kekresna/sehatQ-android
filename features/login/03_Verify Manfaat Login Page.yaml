@@ -1,0 +1,11 @@
+appId: com.she.sehatq
+---
+- runFlow: ../common/precondition.yaml
+- assertVisible:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn:
+    id: "com.she.sehatq:id/iv_profile_nav"
+- tapOn:
+    id: "com.she.sehatq:id/tv_benefit_login"
+- assertVisible: "Manfaat Log in"
+- assertVisible: "Nikmati fitur kesehatan terlengkap untuk\nseluruh anggota keluarga."
